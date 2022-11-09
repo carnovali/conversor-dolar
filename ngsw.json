@@ -1,0 +1,93 @@
+{
+  "configVersion": 1,
+  "timestamp": 1667958234705,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.d472f4bb5bfa678e.js",
+        "/manifest.webmanifest",
+        "/polyfills.3a8f607f10a3e186.js",
+        "/runtime.c3b021237e37ed9d.js",
+        "/styles.76f04e9d23d033f1.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/flag-arg.svg",
+        "/assets/icons/flag-usa.svg",
+        "/assets/icons/ico-change.svg",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/flag-arg.a1748f06763ed7c5.svg",
+        "/flag-usa.35fbfc56d617cd3d.svg",
+        "/ico-change.f6707719138af92a.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/flag-arg.svg": "c85266bbfe5d45a6b3a6c0a5ffcd94fc2de7c1c7",
+    "/assets/icons/flag-usa.svg": "e05eaf08a2746776d8048b3b8366f62783c0c9e7",
+    "/assets/icons/ico-change.svg": "cc80c090fd6dc0ec38a2ef333fc8fa0275797b4a",
+    "/assets/icons/icon-128x128.png": "33f247c127a6398ee3077d5fe6c647813db92471",
+    "/assets/icons/icon-144x144.png": "d9cc621af424043382d89fed3300c563a7a3e9a7",
+    "/assets/icons/icon-152x152.png": "605621b92ac8bf01b806fcbfda66bdb6e52b0108",
+    "/assets/icons/icon-192x192.png": "3add6c909e141cb0a0a56bfca0d741ef7d206b44",
+    "/assets/icons/icon-384x384.png": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/assets/icons/icon-512x512.png": "fcf621a2bb1e284d509dd3af3c65bfbb9cf000c5",
+    "/assets/icons/icon-72x72.png": "085d55aa246599648b51763a269785cdf322787f",
+    "/assets/icons/icon-96x96.png": "84764ddf401e45a5bef73835e915949be760fe49",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/flag-arg.a1748f06763ed7c5.svg": "c85266bbfe5d45a6b3a6c0a5ffcd94fc2de7c1c7",
+    "/flag-usa.35fbfc56d617cd3d.svg": "e05eaf08a2746776d8048b3b8366f62783c0c9e7",
+    "/ico-change.f6707719138af92a.svg": "cc80c090fd6dc0ec38a2ef333fc8fa0275797b4a",
+    "/index.html": "7cb7e352e78a82e0126079d5030834b97760672b",
+    "/main.d472f4bb5bfa678e.js": "396772f875c32b2310e60f34d5bdee67c2c53d1d",
+    "/manifest.webmanifest": "08254e3e5822464d4c2bf8c30e99150322f4feb6",
+    "/polyfills.3a8f607f10a3e186.js": "5e1bd539f6e45a9d31f6a63278f2989c80efdfef",
+    "/runtime.c3b021237e37ed9d.js": "b3b98bfdbd3e4cdfd16d215573b54023291b3e7e",
+    "/styles.76f04e9d23d033f1.css": "2a237e97b59120c54f5218941443683077de8c4f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
