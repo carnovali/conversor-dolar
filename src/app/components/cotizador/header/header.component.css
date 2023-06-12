@@ -1,0 +1,10 @@
+:host {
+  background-color: var(--clr-darkblue);
+  border-radius: 40px 40px 0px 0px;
+}
+
+.header h1 {
+  font: 500 2.4rem var(--ff-cabin);
+  color: var(--clr-white);
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+}

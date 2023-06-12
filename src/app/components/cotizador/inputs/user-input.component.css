@@ -1,0 +1,31 @@
+.input {
+  font-family: var(--ff-cabin);
+  font-weight: 400;
+  border: 3px solid var(--clr-white-80);
+  border-radius: 64px;
+}
+
+.input span {
+  width: 30%;
+  font-size: 3.6em;
+  color: var(--clr-white-80);
+}
+
+.input input {
+  all: unset;
+  max-width: 70%;
+  font-size: 3.2em;
+  text-align: end;
+}
+
+.input input::-webkit-outer-spin-button,
+.input input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input input[type="number"] {
+  appearance: none;
+  -moz-appearance: textfield;
+}

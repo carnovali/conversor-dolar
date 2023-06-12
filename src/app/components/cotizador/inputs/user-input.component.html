@@ -1,0 +1,10 @@
+<div class="input d-flex justify-content-between py-4 px-5">
+  <span>{{ currency }}</span>
+  <input
+    type="text"
+    value="1.00"
+    class="me-5"
+    [ngModel]="value"
+    (ngModelChange)="onInput($event)"
+  />
+</div>

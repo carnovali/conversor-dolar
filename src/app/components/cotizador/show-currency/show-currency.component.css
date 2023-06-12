@@ -1,0 +1,29 @@
+.show-currency {
+  border: 2px solid var(--clr-white-80);
+  border-radius: 64px;
+  min-width: 125px;
+}
+
+.flag {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+.currency {
+  font: 400 2.4em var(--ff-cabin);
+}
+
+.arg-flag {
+  background: url(../../../../assets/icons/flag-arg.svg) center center;
+}
+
+.usa-flag {
+  background: url(../../../../assets/icons/flag-usa.svg) center center;
+}
+
+@media screen and (max-width: 360px) {
+  .show-currency {
+    min-width: 90px;
+  }
+}

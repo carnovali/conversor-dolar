@@ -1,0 +1,37 @@
+:root {
+    --clr-black: #3B3B3B;
+    --clr-white: #f7faff;
+    --clr-white-80: #f7faffcc;
+    --clr-lightblue: #DCE7F7;
+    --clr-blue: #5DA7EC;
+    --clr-darkblue: #287AC7;
+    --clr-violet: #494562;
+    --clr-red: #703131;
+    --clr-green: #3A7031;
+    --clr-darkgreen: #456245;
+    --ff-gudea: 'Gudea', sans-serif;
+    --ff-cabin: 'Cabin', sans-serif;
+    
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--clr-lightblue);
+    height: 100vh;
+}
+
+app-root {
+    height: 100%;
+}
+
+@media screen and (max-width: 870px) {
+    :root {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    :root {
+        font-size: 8px;
+    }
+}

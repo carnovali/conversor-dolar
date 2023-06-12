@@ -1,0 +1,26 @@
+<div [ngClass]="classType">
+  <div class="title">
+    <h2>{{ cotizacionTotal?.nombre | titlecase }}</h2>
+  </div>
+  <div
+    class="compra d-flex flex-column mb-4"
+    *ngIf="cotizacionTotal?.compra && !isNotShowable(cotizacionTotal?.compra)"
+  >
+    <span class="amount" *ngIf="cotizacionTipo === 'U$D'">
+      {{ cotizacionTotal?.compra | currency : "U$D" }}
+    </span>
+    <span class="amount" *ngIf="cotizacionTipo === 'AR$'">
+      {{ cotizacionTotal?.compra | currency : "AR$" }}
+    </span>
+    <span class="tipo-compra"> Compra </span>
+  </div>
+  <div class="venta d-flex flex-column">
+    <span class="amount" *ngIf="cotizacionTipo === 'U$D'">
+      {{ cotizacionTotal?.venta | currency : "U$D" }}
+    </span>
+    <span class="amount" *ngIf="cotizacionTipo === 'AR$'">
+      {{ cotizacionTotal?.venta | currency : "AR$" }}
+    </span>
+    <span class="tipo-venta"> Venta </span>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="cotizador d-flex flex-column">
+  <app-header></app-header>
+  <div class="inputs d-flex justify-content-between align-items-center">
+    <div class="input-left">
+      <user-input
+        [currency]="currencies[0]"
+        (onChange)="onAmountChange($event)"
+      ></user-input>
+    </div>
+    <div class="input-rigth d-flex flex-column">
+      <div
+        class="change-currency d-flex justify-content-between align-items-center"
+      >
+        <show-currency
+          [currecyTipo]="currencies[0]"
+          class="me-3"
+        ></show-currency>
+        <button (click)="onChangeCurrency()"><div></div></button>
+        <show-currency
+          [currecyTipo]="currencies[1]"
+          class="ms-3"
+        ></show-currency>
+      </div>
+      <span class="last-update">Ultima Actualizacion: {{ lastUpdate }}hs</span>
+    </div>
+  </div>
+  <div class="body d-flex flex-column">
+    <div
+      class="main-cotizaciones d-flex justify-content-between flex-wrap mb-4"
+    >
+      <div
+        *ngFor="
+          let cotizacion of cotizacionResults | slice : 0 : 2;
+          let first = first;
+          let last = last
+        "
+      >
+        <cotizacion-item
+          [cotizacionTotal]="cotizacion"
+          [cotizacionTipo]="currencies[1]"
+          [classType]="'main'"
+          [ngClass]="{ 'last-child': last, 'first-child': first }"
+        ></cotizacion-item>
+      </div>
+    </div>
+    <hr class="my-4" />
+    <div class="sub-cotizaciones d-flex justify-content-between flex-wrap">
+      <div *ngFor="let cotizacion of cotizacionResults | slice : 2 : 6">
+        <cotizacion-item
+          [cotizacionTotal]="cotizacion"
+          [cotizacionTipo]="currencies[1]"
+          [classType]="'sub'"
+        ></cotizacion-item>
+      </div>
+    </div>
+  </div>
+</div>

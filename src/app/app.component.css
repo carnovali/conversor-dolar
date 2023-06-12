@@ -1,0 +1,11 @@
+.container-fluid {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+app-cotizador {
+  max-width: 930px;
+}
